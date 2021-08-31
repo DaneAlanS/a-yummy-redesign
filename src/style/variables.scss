@@ -1,7 +1,21 @@
-$white: #fcfcfc;
-$orange: #F37811;
-$blue: #0A0F28;
-$grey: #333333;
+$white: #FAFAFA;
+$orange: #F47E14;
+$blue: #0B0F27;
+$grey: #292f33;
+
+
+@font-face {
+    font-family: "GilroyMedium";
+    src: url("../../static/assets/fonts/GilroyMedium.woff") format("woff"),
+        url("../../static/assets/fonts/GilroyMedium2.woff2") format("woff2"),
+}
+
+@font-face {
+    font-family: "GilroyBold";
+    src: url("../../static/assets/fonts/GilroyBold.woff") format("woff"),
+        url("../../static/assets/fonts/GilroyBold2.woff2") format("woff2"),
+}
+
 
 $theme-colors:("primary":$white,
     "secondary":$white,
