@@ -1,0 +1,14 @@
+$white: #fcfcfc;
+$orange: #F37811;
+$blue: #0A0F28;
+$grey: #333333;
+
+$theme-colors:("primary":$white,
+    "secondary":$white,
+);
+
+$link-color:$white;
+$link-hover-color:$orange;
+$font-color:$white;
+
+@import "node_modules/bootstrap/scss/bootstrap.scss";
