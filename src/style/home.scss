@@ -36,11 +36,11 @@
     width: 450px;
     justify-content: space-around;
     align-items: center;
+    color: $white;
 
     p {
+        font-size: 15px;
         text-align: center;
-        font-size: 1.2em;
-        color: $white;
     }
 }
 
@@ -85,8 +85,7 @@
 }
 
 .yummylogo {
-    width: 35%;
-    background-color: transparent;
+    width: 450px;
 }
 
 .first-message {
@@ -95,7 +94,7 @@
     justify-content: space-between;
     padding-left: 50px;
     padding-right: 100px;
-    font-size: 2em;
+    font-size: 1.6em;
     padding-bottom: 5px;
 
     p {
@@ -107,6 +106,10 @@
 .divider-message {
     padding-top: 50px;
     padding-bottom: 5px;
+
+    a {
+        color: $orange;
+    }
 }
 
 .numbers-wrapper {
@@ -124,7 +127,7 @@
         p {
             text-align: center;
             font-size: 20px;
-            width: 300px;
+            width: 450px;
         }
     }
 
@@ -134,7 +137,6 @@
 .contract {
     display: flex;
     justify-content: space-around;
-    background-color: $orange;
     grid-row-start: 2;
     grid-column-start: 2;
     grid-column-end: 8;
@@ -162,7 +164,7 @@
     grid-row-start: 4;
     grid-row-end: 6;
     z-index: 0;
-    background-color: $blue;
+    //background-color: $blue;
     width: auto;
     height: auto;
     display: grid;
@@ -188,8 +190,15 @@
     display: flex;
     font-size: 2em;
     justify-content: space-around;
+
+    i {
+        color: $white;
+    }
 }
 
+.full-socials {
+    background-color: $grey;
+}
 
 
 .full-socials {
@@ -200,12 +209,33 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $grey;
     margin-top: -5px;
     border-top: 5px solid $orange;
+
+    p {
+        font-size: 0.5em;
+        color: $orange;
+    }
 }
 
-.BKFC {
+.partnerlogo {
     width: 300px;
     height: 300px;
+}
+
+.partners-disclaimer-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.partners-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.legal {
+    text-align: center;
+    width: 800px;
 }

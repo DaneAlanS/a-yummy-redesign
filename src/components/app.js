@@ -9,6 +9,7 @@ import 'animate.css/animate.css'
 import {Navbar, Container, Nav, NavDropdown} from 'react-bootstrap'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import Home from "./home.js"
+import Buy from "./buy.js"
 import Logo from '../../static/assets/YummyCryptoTransparent.png'
 import PCS from '../../static/assets/pancakeswap.png'
 import Bitmart from '../../static/assets/bitmart.png'
@@ -25,7 +26,7 @@ function App() {
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto left-nav">
                  <NavDropdown className ="drop-down" title="Documents" id="basic-nav-dropdown">
-                  <NavDropdown.Item href="#action/3.1"><a href="https://pancakeswap.finance/swap" target="_blank" rel="noreferrer noopener"> Audit</a></NavDropdown.Item>
+                  <NavDropdown.Item href="#action/3.1"><a href="https://github.com/Quillhash/Audit_Reports/blob/master/Yummy%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf" target="_blank" rel="noreferrer noopener"> Audit</a></NavDropdown.Item>
                   <NavDropdown.Item href="#action/3.2"><a href="https://www.bitmart.com/trade/en?symbol=YUMMY_USDT" target="_blank" rel="noreferrer noopener"> Whitepaper</a> </NavDropdown.Item>
                 </NavDropdown>
                 <NavDropdown className ="drop-down" title="Buy Yummy" id="basic-nav-dropdown">
@@ -50,7 +51,10 @@ function App() {
 
         <Switch>
           <Route path="/">
-            <Home />
+            <Home/>
+          </Route>
+          <Route path="/how-to-buy">
+            <Buy/>
           </Route>
         </Switch>
 
