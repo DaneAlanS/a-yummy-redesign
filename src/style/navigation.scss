@@ -12,8 +12,7 @@ a {
 }
 
 .navbar {
-    grid-column-start: 1;
-    grid-column-end: 4;
+    padding-top: 45px;
 
     .left-nav {
         font-size: 1.2em;
@@ -31,7 +30,6 @@ a {
         }
 
     }
-
 
     .right-nav {
         font-size: 2em;
