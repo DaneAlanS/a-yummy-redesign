@@ -1,5 +1,5 @@
-DnD 5E
+A Yummy Redesign
 
 In progress
 
-API using http://www.dnd5eapi.co/
+Redesigning: https://yummycrypto.com/

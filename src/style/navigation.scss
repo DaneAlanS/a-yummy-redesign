@@ -20,7 +20,7 @@ a {
 
         a,
         .dropdown-menu,
-        dropdown-item.active {
+        .dropdown-item.active {
             margin-right: 10px;
             color: $white !important;
             transition: 0.5s ease-in-out;
@@ -29,7 +29,44 @@ a {
 
         }
 
+        .dropdown-menu {
+            background: rgba(255, 255, 255, 0.25);
+            box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(4.5px);
+            -webkit-backdrop-filter: blur(4.5px);
+            border-radius: 20px;
+
+            a:hover {
+                color: $orange !important;
+            }
+        }
+
+        .submenu {
+            margin-left: 20px;
+            display: flex;
+            width: 400px;
+        }
     }
+
+    .dropdown .dropdown-menu {
+        -webkit-transition: all 0.3s;
+        -moz-transition: all 0.3s;
+        -ms-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+
+        max-height: 0;
+        display: block;
+        overflow: hidden;
+        opacity: 0;
+    }
+
+    .dropdown.show .dropdown-menu {
+        max-height: 300px;
+        opacity: 1;
+    }
+
+
 
     .right-nav {
         font-size: 2em;
@@ -43,19 +80,34 @@ a {
 
 }
 
-.pcs {
+.dropdown-menu.show {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-radius: 20px;
+}
+
+
+.exchange-icon {
     width: 20px;
     height: 20px;
     margin-right: 5px;
+    margin-bottom: 6px;
 }
-
-.bitmart {
-    width: 20px;
-    height: 20px;
-    margin-right: 5px;
-}
-
 
 .yummylogo {
     padding-left: 30px;
+}
+
+.drop-menu {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-radius: 20px;
 }

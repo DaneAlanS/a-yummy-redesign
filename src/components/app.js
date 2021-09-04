@@ -12,10 +12,11 @@ import Home from "./home.js"
 import Buy from "./buy.js"
 import Logo from '../../static/assets/YummyCryptoTransparent.png'
 import PCS from '../../static/assets/pancakeswap.png'
+import Soku from '../../static/assets/soku.png'
 import Bitmart from '../../static/assets/bitmart.png'
 
 function App() {
-  
+
   return (
     <Router>
       <Container fluid className="app">
@@ -31,11 +32,25 @@ function App() {
                       <NavDropdown.Item href="#action/3.1"><a href="https://github.com/Quillhash/Audit_Reports/blob/master/Yummy%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf" target="_blank" rel="noreferrer noopener"> Audit</a></NavDropdown.Item>
                       <NavDropdown.Item href="#action/3.2"><a href="https://www.bitmart.com/trade/en?symbol=YUMMY_USDT" target="_blank" rel="noreferrer noopener"> Whitepaper</a> </NavDropdown.Item>
                     </NavDropdown>
+
                     <NavDropdown className ="drop-down" title="Buy Yummy" id="basic-nav-dropdown">
-                      <NavDropdown.Item href="#action/3.1"><a href="https://pancakeswap.finance/swap" target="_blank" rel="noreferrer noopener"> <img className="pcs"src={PCS}></img>PancakeSwap</a></NavDropdown.Item>
-                      <NavDropdown.Item href="#action/3.2"><a href="https://www.bitmart.com/trade/en?symbol=YUMMY_USDT" target="_blank" rel="noreferrer noopener"> <img className="bitmart"src={Bitmart}></img>Bitmart</a> </NavDropdown.Item>
+                      <Row className="submenu">
+                        <Col>
+                              <span>Exchange:</span>
+                              <NavDropdown.Item href="#action/3.1"><a href="https://www.bitmart.com/trade/en?symbol=YUMMY_USDT" target="_blank" rel="noreferrer noopener"> <img className="exchange-icon bitmart"src={Bitmart}></img>Bitmart</a> </NavDropdown.Item>
+                        </Col> 
+                        <Col>
+                              <span>Swap:</span>
+                              <NavDropdown.Item href="#action/3.1"><a href="https://pancakeswap.finance/swap" target="_blank" rel="noreferrer noopener"> <img className="exchange-icon pcs"src={PCS}></img>PancakeSwap</a></NavDropdown.Item>
+                              <NavDropdown.Item href="#action/3.2"><a href="https://app.sokuswap.finance/bsc/#/swap" target="_blank" rel="noreferrer noopener"> <img className="exchange-icon soku"src={Soku}></img>SokuSwap</a></NavDropdown.Item>         
+                        </Col>
+                      </Row>
                     </NavDropdown>
+
+
+
                   </Nav>
+
                 </Navbar.Collapse>
                 <Navbar.Collapse className="justify-content-end">
                   <Nav className="me-auto right-nav">

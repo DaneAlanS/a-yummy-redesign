@@ -29,17 +29,17 @@ function home() {
 return (
     <Container fluid className="home-wrapper">
       <Row className="animate__animated animate__fadeIn  landing-wrapper">
-        <Col className="landing-paragraph-wrapper">
+        <Col xs={6} className="landing-paragraph-wrapper">
             <Row className="landing-text-container">
               <Row className="landing-phrase" xs={2}>Yummy is<span>Changing Lives</span>Across the Globe.</Row>   
               <Row className="landing-details">Yummy Crypto is a project launched on May 1st with a clear vision to deliver value to holders while providing contributions to help solve some of the world's most pressing issues.</Row>
               <Row>
-                <a className="join-our-cause" href="/how-to-buy">Learn how to join our cause  <i className="fas fa-angle-right"></i></a>
+                <a className="join-our-cause" href="/how-to-buy">Learn How to Buy Yummy and Join Our Cause  <i className="fas fa-angle-right"></i></a>
               </Row>
           </Row>
         </Col>
 
-        <Col className="landing-content-wrapper" xs={6}>
+        <Col className="landing-content-wrapper">
           <div className="video-wrapper">
             <iframe width="700" height="363" src="https://www.youtube.com/embed/oFu2nYNiIm8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={false}></iframe>
           </div>
