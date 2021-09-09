@@ -1,3 +1,9 @@
+.joe {
+    border-radius: 400px;
+    max-width: 500px;
+}
+
+
 .home-wrapper {
     width: 100%;
     margin: 0px;
@@ -6,8 +12,9 @@
 
 .landing-wrapper {
     color: $white;
-    padding: 150px 40px 200px 40px;
+    padding: 100px 40px 150px 40px;
 }
+
 
 .landing-text-container {
     justify-content: center;
@@ -33,7 +40,7 @@
 }
 
 .landing-details {
-    font-size: 20px;
+    font-size: 19px;
     text-align: center;
 }
 
@@ -43,21 +50,39 @@
     font-size: 25px;
 }
 
-.landing-content-wrapper {
+.video-contract-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.video-wrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
+    border-radius: 30px;
+    overflow: hidden;
+    z-index: 1;
+    max-height: 600px;
     background: rgba(255, 255, 255, 0.25);
     box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(4.5px);
     -webkit-backdrop-filter: blur(4.5px);
     border-radius: 20px;
-    padding: 30px
+    padding: 20px;
+    margin-bottom: 20px;
+
+    iframe {
+        border-radius: 20px;
+    }
 }
 
-.video-wrapper {
-    border-radius: 30px;
-    overflow: hidden;
-    z-index: 1;
+.contract {
+    text-align: center;
+    font-size: 20px;
+    border-radius: 20px;
+    padding: 8px;
 }
 
 .first-message {
@@ -111,20 +136,6 @@
     padding-bottom: 20px;
 }
 
-.contract-wrapper {
-    justify-content: center;
-}
-
-.contract {
-    text-align: center;
-    font-size: 30px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 80%;
-}
-
 .darkBG {
     margin-top: -65px;
     padding-top: 100px;
@@ -140,44 +151,4 @@
     a {
         font-size: 60px;
     }
-}
-
-.full-socials {
-    background-color: $grey;
-    margin: 0px;
-    border-top: $orange solid 5px;
-}
-
-
-.partners-wrapper {
-    padding-top: 20px;
-
-    img {
-        width: 100%;
-        max-width: 250px;
-        height: auto;
-    }
-}
-
-.partner-logo-wrapper {
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-}
-
-.fb-page {
-    margin-right: -12px;
-    display: flex;
-    justify-content: flex-end;
-
-    iframe {
-        width: 330px;
-    }
-}
-
-.legal {
-    padding-top: 20px;
-    font-size: 9px;
-    color: $orange;
-    text-align: center;
 }

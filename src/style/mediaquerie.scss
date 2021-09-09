@@ -1,1 +1,50 @@
-@media screen and (max-width: 600px) {}
+@media screen and (max-width: 800px) {
+    html {
+        padding: 0px;
+        margin: 0px;
+
+    }
+
+    .right-nav {
+        display: none;
+    }
+
+    .landing-details {
+        padding-bottom: 30px;
+    }
+
+    .video-contract-wrapper {
+        width: 100%;
+    }
+
+    .video-wrapper {
+        padding: 5px;
+
+        iframe {
+            width: 100%;
+        }
+    }
+
+    .contract {
+        width: 100%;
+        font-size: 0.8em;
+    }
+
+    .join-our-cause {
+        padding-bottom: 30px;
+    }
+
+    .yummylogo {
+        margin-top: 150px;
+    }
+
+    .divider-message {
+        p {
+            font-size: 0.8em;
+        }
+    }
+
+    .numbers {
+        font-size: 0.8em;
+    }
+}

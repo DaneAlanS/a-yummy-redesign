@@ -5,15 +5,18 @@ import {
   Route,
   Link
 } from "react-router-dom";
-import 'animate.css/animate.css' 
-import {Navbar, Container, Nav, NavDropdown, Row, Col} from 'react-bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
-import Home from "./home.js"
-import Buy from "./buy.js"
-import Logo from '../../static/assets/YummyCryptoTransparent.png'
-import PCS from '../../static/assets/pancakeswap.png'
-import Soku from '../../static/assets/soku.png'
-import Bitmart from '../../static/assets/bitmart.png'
+import 'animate.css/animate.css';
+import {Navbar, Container, Nav, NavDropdown, Row, Col} from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Home from "./home.js";
+import Buy from "./buy.js";
+
+import Logo from '../../static/assets/YummyCryptoTransparent.png';
+import PCS from '../../static/assets/pancakeswap.png';
+import Soku from '../../static/assets/soku.png';
+import Bitmart from '../../static/assets/bitmart.png';
+import BKFCLogo from '../../static/assets/BareKnuckle.png';
+import UNICEFLogo from '../../static/assets/UNICEF.png';
 
 function App() {
 
@@ -24,7 +27,7 @@ function App() {
           <Col>
             <Navbar expand="lg" variant="dark">
               <Container>
-                <Navbar.Brand href="#home"><img className="transparentlogo"src={Logo}></img></Navbar.Brand>
+                <Navbar.Brand href="/"><img className="transparentlogo"src={Logo}></img></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="me-auto left-nav">
@@ -47,8 +50,6 @@ function App() {
                       </Row>
                     </NavDropdown>
 
-
-
                   </Nav>
 
                 </Navbar.Collapse>
@@ -70,15 +71,41 @@ function App() {
         <Row>
           <Col>
             <Switch>
-              <Route path="/">
-                <Home/>
-              </Route>
-              <Route path="/how-to-buy">
-                <Buy/>
-              </Route>
+              <Route exact path="/" component={Home}/>
+              <Route exact path="/learn" component={Buy}/>
             </Switch>
           </Col>
         </Row>
+
+          {/* FOOTER */}
+           <Row className="full-socials">
+            <Row className="follow-socials">
+              <h1>FOLLOW-US ON SOCIAL MEDIA!</h1>
+              <Row className="socials-big">
+                <Col></Col>
+                <Col><a href="https://twitter.com/YummyCrypto" target="_blank" rel="noreferrer noopener"><i class="fab fa-twitter-square"></i></a></Col>
+                <Col><a href="https://t.me/yummycoin" target="_blank" rel="noreferrer noopener"><i class="fab fa-telegram-plane"></i></a></Col>
+                <Col><a href="https://www.reddit.com/r/yummycoin/" target="_blank" rel="noreferrer noopener"><i class="fab fa-reddit-square"></i></a></Col>
+                <Col><a href="https://www.facebook.com/OfficialYummyCoin" target="_blank" rel="noreferrer noopener"><i class="fab fa-facebook-square"></i></a></Col>
+                <Col><a href="https://www.instagram.com/yummycharity/" target="_blank" rel="noreferrer noopener"><i class="fab fa-instagram-square"></i></a></Col>
+                <Col><a href="https://www.youtube.com/c/YummyProjectOfficial/" target="_blank" rel="noreferrer noopener"><i class="fab fa-youtube-square"></i></a></Col>
+                <Col></Col>
+              </Row>
+            </Row>
+
+            <Col className='disclaimer-wrapper'>            
+              <Row className="legal">
+                <Col>
+                  <p><strong>LEGAL DISCLAIMER: </strong>
+                      The information provided on YummyCrypto.com does not constitute investment advice, financial advice, trading advice, or any other sort of advice and you should not treat any of the website’s content as such. The Yummy team does not recommend that any cryptocurrency should be bough, sold, or held by you. Do conduct your own due diligence and consult your financial advisor before making any investment decisions. By purchasing Yummy, you agree that you are not purchasing a security or investment and you agree to hold the team harmless and not liable for any losses or taxes you may incur. You also agree that the team is presenting the token “as is” and is not required to provide any support or services. You should have no expectation of any form from Yummy and its team. Although Yummy is a community driven token for social networking and not a registered digital currency, the team strongly recommends that citizens in areas with government bans on Crypto do not purchase it because the team cannot ensure compliance with your territory’s regulations. Always make sure that you are in compliance with your local laws and regulations before you make any purchase.
+                  </p>
+                  <p><strong>RISK DISCLOSURE: </strong>
+                    Please note there are always risks associated with smart-contracts. Please use at your own risk. Yummy is not a registered broker, analyst, or investment advisor. Everything that’s provided on this site is purely for guidance, informational and educational purposes, and fun. All information contained herein should be independently verified and confirmed. We do not accept any liability for any loss or damage whatsoever caused in reliance upon such information or services. Please be aware of the risks involved with any trading done in any financial market. Do not trade with money that you cannot afford to lose.
+                  </p>
+                </Col>
+              </Row>
+            </Col>
+          </Row>
 
       </Container>
 

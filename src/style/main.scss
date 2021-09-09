@@ -9,9 +9,13 @@ a:link {
 .app {
     font-family: 'GilroyMedium', sans-serif;
     background-image: linear-gradient(to bottom, #0b0f27, #361e46, #6d2559, #a52c59, #d44349, #e35c5b, #f1736e, #ff8a82, #ffa4b9, #f9c3e0, #f2e1f5, #fafafa);
+    margin: 0px;
+    padding: 0px;
 }
 
 @import "./variables.scss";
 @import "./navigation.scss";
+@import "./footer.scss";
 @import "./home.scss";
+@import"./learn.scss";
 @import "./mediaquerie.scss";

@@ -11,12 +11,10 @@ import {Container, Row, Col} from 'react-bootstrap';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-import LogoSquare from '../../static/assets/LogoSquareTransparent.png'
-import BKFCLogo from '../../static/assets/BareKnuckle.png'
-import UNICEFLogo from '../../static/assets/UNICEF.png'
-import WhiteBG from '../../static/assets/BG-3.png'
-import OrangeBG from '../../static/assets/BG-2.png'
-import BlueBG from '../../static/assets/BG-1.png'
+import LogoSquare from '../../static/assets/LogoSquareTransparent.png';
+import WhiteBG from '../../static/assets/BG-3.png';
+import OrangeBG from '../../static/assets/BG-2.png';
+import BlueBG from '../../static/assets/BG-1.png';
 
 
 function home() {
@@ -29,20 +27,20 @@ function home() {
 return (
     <Container fluid className="home-wrapper">
       <Row className="animate__animated animate__fadeIn  landing-wrapper">
-        <Col xs={6} className="landing-paragraph-wrapper">
+        <Col  className="landing-paragraph-wrapper">
             <Row className="landing-text-container">
-              <Row className="landing-phrase" xs={2}>Yummy is<span>Changing Lives</span>Across the Globe.</Row>   
+              <Row className="landing-phrase">Together We're<span>Changing Lives</span>Across the Globe.</Row>   
               <Row className="landing-details">Yummy Crypto is a project launched on May 1st with a clear vision to deliver value to holders while providing contributions to help solve some of the world's most pressing issues.</Row>
               <Row>
-                <a className="join-our-cause" href="/how-to-buy">Learn How to Buy Yummy and Join Our Cause  <i className="fas fa-angle-right"></i></a>
+                <a className="join-our-cause" href="/learn">Learn How to Buy Yummy and Join Our Cause  <i className="fas fa-angle-right"></i></a>
               </Row>
           </Row>
         </Col>
-
-        <Col className="landing-content-wrapper">
-          <div className="video-wrapper">
-            <iframe width="700" height="363" src="https://www.youtube.com/embed/oFu2nYNiIm8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={false}></iframe>
-          </div>
+        <Col className="video-contract-wrapper">
+            <div className="video-wrapper">
+                <iframe width="700" height="363" src="https://www.youtube.com/embed/oFu2nYNiIm8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={false}></iframe>
+            </div>
+            <span className="contract" style={{ backgroundImage: `url(${BlueBG})` }}>CONTRACT ADDRESS: 0x05f2df7b3d612a23fe12162a6c996447dce728a5 <i className="far fa-clipboard"></i></span>
         </Col>
       </Row>
 
@@ -76,55 +74,8 @@ return (
           </Col>
         </Row>
       </Row>
-
-      <Row className="contract-wrapper">
-        <span className="contract" style={{ backgroundImage: `url(${OrangeBG})` }}>CONTRACT ADDRESS: 0x05f2df7b3d612a23fe12162a6c996447dce728a5 <i className="far fa-clipboard"></i></span>
-      </Row>
-
-        <Row className="darkBG" style={{ backgroundImage: `url(${BlueBG})` }}>
-          <Row className="darkBG-follow-socials">
-            <span>FOLLOW OUR SOCIALS TO KEEP UP WITH US.</span>
-            <Row className="socials-big">
-              <Col><a href="https://twitter.com/YummyCrypto" target="_blank" rel="noreferrer noopener"><i class="fab fa-twitter-square"></i></a></Col>
-              <Col><a href="https://t.me/yummycoin" target="_blank" rel="noreferrer noopener"><i class="fab fa-telegram-plane"></i></a></Col>
-              <Col><a href="https://www.reddit.com/r/yummycoin/" target="_blank" rel="noreferrer noopener"><i class="fab fa-reddit-square"></i></a></Col>
-              <Col><a href="https://www.facebook.com/OfficialYummyCoin" target="_blank" rel="noreferrer noopener"><i class="fab fa-facebook-square"></i></a></Col>
-              <Col><a href="https://www.instagram.com/yummycharity/" target="_blank" rel="noreferrer noopener"><i class="fab fa-instagram-square"></i></a></Col>
-              <Col><a href="https://www.youtube.com/c/YummyProjectOfficial/" target="_blank" rel="noreferrer noopener"><i class="fab fa-youtube-square"></i></a></Col>
-            </Row>
-          </Row>
-          
-          <Row className="full-socials">
-            <Col><a className="twitter-timeline" data-lang="en" data-width="340" data-height="500" data-theme="dark" href="https://twitter.com/YummyCrypto?ref_src=twsrc%5Etfw"></a></Col>
-            <Col xs={6} className='partners-disclaimer-wrapper'>
-              <Row  className="partners-wrapper">
-                <Col className="partner-logo-wrapper">
-                  <a href="https://www.bareknuckle.tv/"  target="_blank" rel="noreferrer noopener"><img className="partnerlogo"src={BKFCLogo}></img></a>
-                </Col>
-                <Col className="partner-logo-wrapper">
-                  <a href="https://www.unicef.org/"  target="_blank" rel="noreferrer noopener"><img className="partnerlogo"src={UNICEFLogo}></img></a>
-                </Col>
-              </Row>
-              <Row className="legal">
-                <Row>
-                  <p><strong>LEGAL DISCLAIMER: </strong>
-                      The information provided on YummyCrypto.com does not constitute investment advice, financial advice, trading advice, or any other sort of advice and you should not treat any of the website’s content as such. The Yummy team does not recommend that any cryptocurrency should be bough, sold, or held by you. Do conduct your own due diligence and consult your financial advisor before making any investment decisions. By purchasing Yummy, you agree that you are not purchasing a security or investment and you agree to hold the team harmless and not liable for any losses or taxes you may incur. You also agree that the team is presenting the token “as is” and is not required to provide any support or services. You should have no expectation of any form from Yummy and its team. Although Yummy is a community driven token for social networking and not a registered digital currency, the team strongly recommends that citizens in areas with government bans on Crypto do not purchase it because the team cannot ensure compliance with your territory’s regulations. Always make sure that you are in compliance with your local laws and regulations before you make any purchase.
-                  </p>
-                </Row>
-                <Row>
-                  <p><strong>RISK DISCLOSURE: </strong>
-                    Please note there are always risks associated with smart-contracts. Please use at your own risk. Yummy is not a registered broker, analyst, or investment advisor. Everything that’s provided on this site is purely for guidance, informational and educational purposes, and fun. All information contained herein should be independently verified and confirmed. We do not accept any liability for any loss or damage whatsoever caused in reliance upon such information or services. Please be aware of the risks involved with any trading done in any financial market. Do not trade with money that you cannot afford to lose.
-                  </p>
-                </Row>
-              </Row>
-            </Col>
-            <Col className="fb-page">
-              <iframe className="fb-page"src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FOfficialYummyCoin%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="300" height="500" scrolling="no" frameBorder="0" allowFullScreen={false} allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>          
-            </Col>
-          </Row>
-
-        </Row>
-    </Container>
+      
+</Container>
     
   );
 }
