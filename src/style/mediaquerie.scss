@@ -1,9 +1,161 @@
-@media screen and (max-width: 800px) {
-    html {
+@media screen and (max-width: 1500px) {
+
+    .darkBG {
+        margin-top: -120px;
+    }
+
+}
+
+@media screen and (max-width: 1400px) {
+
+    .nav-container.container {
+        flex-direction: column;
+    }
+
+    .left-nav.navbar-nav {
+        justify-content: center;
+        padding: 0px;
+    }
+
+    #basic-navbar-nav {
+        order: 1;
+    }
+
+
+    .darkBG {
+        margin-top: -120px;
+    }
+
+}
+
+
+@media screen and (max-width: 1360px) {
+
+    .darkBG {
+        margin-top: -100px;
+    }
+
+}
+
+@media screen and (max-width: 1280px) {
+    .landing-wrapper {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .landing-details {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .video-contract-wrapper {
         padding: 0px;
         margin: 0px;
-
     }
+
+    .video-wrapper {
+        width: 80vw;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .darkBG {
+        margin-top: -80px;
+    }
+
+}
+
+@media screen and (max-width: 1096px) {
+
+    .landing-wrapper {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .landing-phrase {
+        font-size: 40px;
+    }
+
+    .landing-details {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+}
+
+@media screen and (max-width: 990px) {
+
+
+    .submenu {
+        flex-direction: column;
+    }
+
+    #basic-navbar-nav {
+        z-index: 10;
+        position: fixed;
+        top: 8vh;
+        left: 1vw;
+        background: rgba(0, 0, 0, 0.5) !important;
+        box-shadow: 20px 20px 40px -6px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(4.5px);
+        -webkit-backdrop-filter: blur(4.5px);
+        border-radius: 10px;
+        padding: 10px;
+    }
+
+    .nav-container.container>.navbar-toggler {
+        z-index: 10;
+        position: fixed;
+        top: 1vh;
+        left: 1vw;
+        background-color: $blue;
+        border: $white 2px solid;
+    }
+
+    .justify-content-end {
+        display: none;
+    }
+
+    .yummylogo-column {
+        display: none;
+    }
+
+    .dropdown-menu {
+        width: 250px;
+        flex-direction: column;
+    }
+
+    .numbers {
+        font-size: 20px !important;
+
+        p {
+            font-size: 15px !important;
+        }
+    }
+
+    .sprout-image-wrapper {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 950px) {
+
+    .darkBG {
+        margin-top: -60px;
+    }
+
+    .wave-divider {
+        margin-top: -1px;
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+
 
     .right-nav {
         display: none;
@@ -13,25 +165,10 @@
         padding-bottom: 30px;
     }
 
-    .video-contract-wrapper {
-        width: 100%;
-    }
-
-    .video-wrapper {
-        padding: 5px;
-
-        iframe {
-            width: 100%;
-        }
-    }
 
     .contract {
         width: 100%;
         font-size: 0.8em;
-    }
-
-    .join-our-cause {
-        padding-bottom: 30px;
     }
 
     .yummylogo {
@@ -47,4 +184,146 @@
     .numbers {
         font-size: 0.8em;
     }
+}
+
+
+@media screen and (max-width: 745px) {
+    .video-contract-wrapper {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .video-wrapper {
+        width: 100vw;
+        background: none;
+        padding: 0px;
+        border-radius: 0px;
+
+        iframe {
+            border-radius: 0px;
+        }
+    }
+}
+
+
+
+@media screen and (max-width: 700px) {
+
+    .darkBG {
+        margin-top: -40px;
+    }
+
+    .wave-divider {
+        margin-top: -2px;
+    }
+
+    .copyright-social-wrapper {
+        flex-direction: column;
+
+        .copyright {
+            justify-content: center;
+            align-items: center;
+        }
+
+        .socials-footer {
+            justify-content: center;
+        }
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .landing-wrapper {
+        padding: 0px;
+        padding-top: 30px;
+    }
+
+    .landing-phrase {
+        font-size: 35px;
+    }
+
+    .landing-details {
+        padding-top: 20px;
+        font-size: 15px;
+    }
+
+    .join-our-cause.btn {
+        font-size: 14px;
+    }
+
+    .video-contract-wrapper {
+        padding-bottom: 50px;
+    }
+
+    .numbers {
+        font-size: 18px !important;
+
+        p {
+            font-size: 12px !important;
+        }
+    }
+
+    .darkBG {
+        margin-top: -30px;
+    }
+
+    .darkBG-text {
+        margin-top: 200px;
+    }
+
+    .roadmap-wrapper {
+        margin: auto;
+    }
+
+
+}
+
+@media screen and (max-width: 340px) {
+
+    .divider-message {
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .darkBG {
+        margin-top: -20px;
+    }
+
+    .navbar-brand {
+        width: 100%;
+
+        .transparentlogo {
+            width: 90%;
+        }
+    }
+
+    .numbers {
+        h3 {
+            font-size: 17px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 280px) {
+
+    html {
+        font-size: 10px !important;
+    }
+
+    .socials-footer {
+        font-size: 12px;
+    }
+}
+
+
+
+@media screen and (max-width: 230px) {
+
+    .darkBG {
+        margin-top: -15px;
+    }
+
 }

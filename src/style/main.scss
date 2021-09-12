@@ -13,6 +13,12 @@ a:link {
     padding: 0px;
 }
 
+.app.container {
+    margin: 0px;
+    padding: 0px;
+}
+
+
 @import "./variables.scss";
 @import "./navigation.scss";
 @import "./footer.scss";

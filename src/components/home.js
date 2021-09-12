@@ -7,11 +7,14 @@ import {
 } from "react-router-dom";
 import Animate from 'animate.css-react'
 import 'animate.css/animate.css' 
-import {Container, Row, Col} from 'react-bootstrap';
+import {Container, Row, Col, Button} from 'react-bootstrap';
 import Aos from "aos";
 import "aos/dist/aos.css";
 
 import LogoSquare from '../../static/assets/LogoSquareTransparent.png';
+import Roadmap from '../../static/assets/roadmap.png'
+import WaveDivider from '../../static/assets/wave.svg';
+import Sprout from '../../static/assets/sprout.png';
 import WhiteBG from '../../static/assets/BG-3.png';
 import OrangeBG from '../../static/assets/BG-2.png';
 import BlueBG from '../../static/assets/BG-1.png';
@@ -31,8 +34,8 @@ return (
             <Row className="landing-text-container">
               <Row className="landing-phrase">Together We're<span>Changing Lives</span>Across the Globe.</Row>   
               <Row className="landing-details">Yummy Crypto is a project launched on May 1st with a clear vision to deliver value to holders while providing contributions to help solve some of the world's most pressing issues.</Row>
-              <Row>
-                <a className="join-our-cause" href="/learn">Learn How to Buy Yummy and Join Our Cause  <i className="fas fa-angle-right"></i></a>
+              <Row className="button-wrapper">
+                <Button className="join-our-cause" href="/learn">Learn How to Buy Yummy and Join Our Cause  <i className="fas fa-angle-right"></i></Button>
               </Row>
           </Row>
         </Col>
@@ -44,9 +47,10 @@ return (
         </Col>
       </Row>
 
+    
       <Row className="divider-content-wrapper"  style={{ backgroundImage: `url(${WhiteBG})` }}>
         <Row data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" className="first-message">
-          <Col>
+          <Col className="yummylogo-column">
             <Row className="yummylogo-wrapper">
               <img className="yummylogo"src={LogoSquare}></img>
             </Row>
@@ -72,8 +76,26 @@ return (
             <h3>HOLDERS</h3>
             <p>75,000 holders who have decided to join us in our mission to make the World a better place.</p>
           </Col>
-        </Row>
+        </Row>               
       </Row>
+      <Row>
+        <img className="wave-divider"src={WaveDivider}></img>
+      </Row>
+
+      <Row className="darkBG" style={{ backgroundImage: `url(${BlueBG})` }}>
+          <Col className="darkBG-text">
+            <p>Our leadership team is as thoroughly passionate about the long term growth of Yummy. We work hard to have a positive impact in the World, while maximizing the returns to our token Holders through our exceptional tokenomics.</p>
+            <p>We are placing an emphasis on complete transparency, sustainable strategic growth decisions and innovative marketing campaigns that will ensure Yummy will reach its maximum potential.</p>
+            In addition to daily updates throughout our social channels, our leadership is very frequently available on the Yummy Coin Telegram for you to ask questions, give feedback or provide ideas. All are welcome to our Telegram/Discord channels, even non-Yummy holders.
+          </Col>
+          <Col className="sprout-image-wrapper">
+            <img className="sprout"src={Sprout}></img>
+          </Col>
+          <Row className="roadmap-wrapper">
+            <h1>ROADMAP</h1>
+            <img className="roadmap"src={Roadmap}></img>
+          </Row>
+        </Row>
       
 </Container>
     

@@ -30,23 +30,19 @@ return (
             <span>Step-by-step instructions for purchasing Yummy Coin with Trust Wallet or MetaMask.</span>
           </Row>
 
-         <Row className="how-to-video-wrapper">
-           <Col></Col>
-           <Col xs={7}>        
-              <iframe width="700" height="360" src="https://www.youtube.com/embed/bZup7IK7qrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           </Col>
-           <Col></Col>
-         </Row>
+          <Row className="how-to-video-wrapper">      
+                <iframe width="700" height="360" src="https://www.youtube.com/embed/bZup7IK7qrM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </Row>
 
-         <Row>
-           <Col className="button-wrapper">
-              <Button className="wallet-button">GET STARTED WITH TRUST WALLET</Button>
-           </Col>
-           <Col className="button-wrapper">
-              <Button className="wallet-button">GET STARTED WITH METAMASK</Button>
-           </Col>
-         </Row>
-
+          <Row>
+            <Col className="button-wrapper">
+                <Button className="wallet-button">GET STARTED WITH TRUST WALLET</Button>
+            </Col>
+            <Col className="button-wrapper">
+                <Button className="wallet-button">GET STARTED WITH METAMASK</Button>
+            </Col>
+          </Row>
+          
         </Col>
       </Row>
     </Container>

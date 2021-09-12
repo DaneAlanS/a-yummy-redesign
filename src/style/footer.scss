@@ -1,6 +1,6 @@
 .full-socials {
-    background-color: $grey;
-    border-top: $orange solid 5px;
+    background-color: $darkblue;
+    border-top: $orange solid 1px;
     color: $white;
     justify-content: center;
     text-align: center;
@@ -8,17 +8,22 @@
 
 .follow-socials {
     padding-top: 40px;
-
-    i {
-        font-size: 3.2em;
-    }
-
-    .socials-big {
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
 }
 
+.copyright {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.socials-footer {
+    display: flex;
+    justify-content: flex-end;
+
+    i {
+        font-size: 2em;
+        padding: 10px;
+    }
+}
 
 .legal {
     padding-top: 20px;

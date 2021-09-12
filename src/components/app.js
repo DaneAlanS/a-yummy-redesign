@@ -10,6 +10,7 @@ import {Navbar, Container, Nav, NavDropdown, Row, Col} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./home.js";
 import Buy from "./buy.js";
+import WhitePaper from"./whitepaper.js";
 
 import Logo from '../../static/assets/YummyCryptoTransparent.png';
 import PCS from '../../static/assets/pancakeswap.png';
@@ -26,14 +27,16 @@ function App() {
         <Row>
           <Col>
             <Navbar expand="lg" variant="dark">
-              <Container>
+              <Container className="nav-container">
                 <Navbar.Brand href="/"><img className="transparentlogo"src={Logo}></img></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+             
+                <Navbar.Collapse id="basic-navbar-nav">                  
                   <Nav className="me-auto left-nav">
+
                     <NavDropdown className ="drop-down" title="Documents" id="basic-nav-dropdown">
                       <NavDropdown.Item href="#action/3.1"><a href="https://github.com/Quillhash/Audit_Reports/blob/master/Yummy%20Smart%20Contract%20Audit%20Report%20-%20QuillAudits.pdf" target="_blank" rel="noreferrer noopener"> Audit</a></NavDropdown.Item>
-                      <NavDropdown.Item href="#action/3.2"><a href="https://www.bitmart.com/trade/en?symbol=YUMMY_USDT" target="_blank" rel="noreferrer noopener"> Whitepaper</a> </NavDropdown.Item>
+                      <NavDropdown.Item href="#action/3.2"><a href="/whitepaper"> Whitepaper</a> </NavDropdown.Item>
                     </NavDropdown>
 
                     <NavDropdown className ="drop-down" title="Buy Yummy" id="basic-nav-dropdown">
@@ -45,11 +48,11 @@ function App() {
                         <Col>
                               <span>Swap:</span>
                               <NavDropdown.Item href="#action/3.1"><a href="https://pancakeswap.finance/swap" target="_blank" rel="noreferrer noopener"> <img className="exchange-icon pcs"src={PCS}></img>PancakeSwap</a></NavDropdown.Item>
-                              <NavDropdown.Item href="#action/3.2"><a href="https://app.sokuswap.finance/bsc/#/swap" target="_blank" rel="noreferrer noopener"> <img className="exchange-icon soku"src={Soku}></img>SokuSwap</a></NavDropdown.Item>         
+                              <NavDropdown.Item href="#action/3.2"><a href="https://app.sokuswap.finance/bsc/#/swap?inputCurrency=0xB8c77482e45F1F44dE1745F52C74426C631bDD52?&outputCurrency=0x05f2df7b3d612a23fe12162a6c996447dce728a5" target="_blank" rel="noreferrer noopener"> <img className="exchange-icon soku"src={Soku}></img>SokuSwap</a></NavDropdown.Item>         
                         </Col>
                       </Row>
                     </NavDropdown>
-
+                    <Nav.Link href="/">Merchandise</Nav.Link>
                   </Nav>
 
                 </Navbar.Collapse>
@@ -63,33 +66,35 @@ function App() {
                     <Nav.Link href="#action"><a href="https://www.youtube.com/c/YummyProjectOfficial/" target="_blank" rel="noreferrer noopener"><i className="fab fa-youtube"></i></a></Nav.Link>
                   </Nav>
                 </Navbar.Collapse>
+           
               </Container>
             </Navbar>
           </Col>
         </Row>
 
-        <Row>
-          <Col>
+
             <Switch>
               <Route exact path="/" component={Home}/>
               <Route exact path="/learn" component={Buy}/>
+              <Route exact path="/whitepaper" component={WhitePaper}/>
             </Switch>
-          </Col>
-        </Row>
+
 
           {/* FOOTER */}
            <Row className="full-socials">
-            <Row className="follow-socials">
-              <h1>FOLLOW-US ON SOCIAL MEDIA!</h1>
-              <Row className="socials-big">
-                <Col></Col>
-                <Col><a href="https://twitter.com/YummyCrypto" target="_blank" rel="noreferrer noopener"><i class="fab fa-twitter-square"></i></a></Col>
-                <Col><a href="https://t.me/yummycoin" target="_blank" rel="noreferrer noopener"><i class="fab fa-telegram-plane"></i></a></Col>
-                <Col><a href="https://www.reddit.com/r/yummycoin/" target="_blank" rel="noreferrer noopener"><i class="fab fa-reddit-square"></i></a></Col>
-                <Col><a href="https://www.facebook.com/OfficialYummyCoin" target="_blank" rel="noreferrer noopener"><i class="fab fa-facebook-square"></i></a></Col>
-                <Col><a href="https://www.instagram.com/yummycharity/" target="_blank" rel="noreferrer noopener"><i class="fab fa-instagram-square"></i></a></Col>
-                <Col><a href="https://www.youtube.com/c/YummyProjectOfficial/" target="_blank" rel="noreferrer noopener"><i class="fab fa-youtube-square"></i></a></Col>
-                <Col></Col>
+            <Row className="follow-socials">                      
+              <Row className="copyright-social-wrapper">
+                <Col className="copyright">
+                  <span>© 2021 YUMMY CHARITY. All rights reserved</span>
+                </Col>
+                <Col className="socials-footer">
+                  <a href="https://twitter.com/YummyCrypto" target="_blank" rel="noreferrer noopener"><i class="fab fa-twitter-square"></i></a>
+                  <a href="https://t.me/yummycoin" target="_blank" rel="noreferrer noopener"><i class="fab fa-telegram-plane"></i></a>
+                  <a href="https://www.reddit.com/r/yummycoin/" target="_blank" rel="noreferrer noopener"><i class="fab fa-reddit-square"></i></a>
+                  <a href="https://www.facebook.com/OfficialYummyCoin" target="_blank" rel="noreferrer noopener"><i class="fab fa-facebook-square"></i></a>
+                  <a href="https://www.instagram.com/yummycharity/" target="_blank" rel="noreferrer noopener"><i class="fab fa-instagram-square"></i></a>
+                  <a href="https://www.youtube.com/c/YummyProjectOfficial/" target="_blank" rel="noreferrer noopener"><i class="fab fa-youtube-square"></i></a>
+                </Col>
               </Row>
             </Row>
 
