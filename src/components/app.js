@@ -6,6 +6,7 @@ import {
   Link
 } from "react-router-dom";
 import 'animate.css/animate.css';
+import Hamburger from 'hamburger-react';
 import {Navbar, Container, Nav, NavDropdown, Row, Col} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./home.js";
@@ -20,6 +21,7 @@ import BKFCLogo from '../../static/assets/BareKnuckle.png';
 import UNICEFLogo from '../../static/assets/UNICEF.png';
 
 function App() {
+  const [isOpen, setOpen] = useState(false)
 
   return (
     <Router>
@@ -29,7 +31,7 @@ function App() {
             <Navbar expand="lg" variant="dark">
               <Container className="nav-container">
                 <Navbar.Brand href="/"><img className="transparentlogo"src={Logo}></img></Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                <Navbar.Toggle aria-controls="basic-navbar-nav" children={<Hamburger color={"#F47E14"}toggled={isOpen} toggle={setOpen} />}/>
              
                 <Navbar.Collapse id="basic-navbar-nav">                  
                   <Nav className="me-auto left-nav">
@@ -45,7 +47,7 @@ function App() {
                               <span>Exchange:</span>
                               <NavDropdown.Item href="#action/3.1"><a href="https://www.bitmart.com/trade/en?symbol=YUMMY_USDT" target="_blank" rel="noreferrer noopener"> <img className="exchange-icon bitmart"src={Bitmart}></img>Bitmart</a> </NavDropdown.Item>
                         </Col> 
-                        <Col>
+                        <Col className="swap-menu">
                               <span>Swap:</span>
                               <NavDropdown.Item href="#action/3.1"><a href="https://pancakeswap.finance/swap" target="_blank" rel="noreferrer noopener"> <img className="exchange-icon pcs"src={PCS}></img>PancakeSwap</a></NavDropdown.Item>
                               <NavDropdown.Item href="#action/3.2"><a href="https://app.sokuswap.finance/bsc/#/swap?inputCurrency=0xB8c77482e45F1F44dE1745F52C74426C631bDD52?&outputCurrency=0x05f2df7b3d612a23fe12162a6c996447dce728a5" target="_blank" rel="noreferrer noopener"> <img className="exchange-icon soku"src={Soku}></img>SokuSwap</a></NavDropdown.Item>         
