@@ -40,7 +40,6 @@
 @media screen and (max-width: 1280px) {
     .landing-wrapper {
         flex-direction: column;
-        padding-top: 30px;
     }
 
     .landing-details {
@@ -67,11 +66,6 @@
 }
 
 @media screen and (max-width: 1096px) {
-
-    .landing-wrapper {
-        flex-direction: column;
-        padding-top: 30px;
-    }
 
     .landing-phrase {
         font-size: 40px;
@@ -120,7 +114,7 @@
         position: fixed;
         top: 1vh;
         left: 1vw;
-        background-color: $blue;
+        background-color: $orange;
         border: $white 2px solid;
         width: 60px;
         height: 60px;
@@ -256,11 +250,6 @@
 
 @media screen and (max-width: 480px) {
 
-    .landing-wrapper {
-        padding: 0px;
-        padding-top: 30px;
-    }
-
     .landing-phrase {
         font-size: 35px;
     }
@@ -301,7 +290,22 @@
 
 }
 
+@media screen and (max-width: 380px) {
+    .landing-phrase {
+        font-size: 30px;
+        width: 100vw;
+    }
+
+    .contract {
+        width: 100vw;
+        font-size: 10px;
+    }
+}
+
+
 @media screen and (max-width: 340px) {
+
+
 
     .divider-message {
         p {
@@ -334,6 +338,8 @@
     html {
         font-size: 10px !important;
     }
+
+
 
     .socials-footer {
         font-size: 12px;

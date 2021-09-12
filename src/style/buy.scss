@@ -1,5 +1,9 @@
+.how-to-buy-wrapper {
+    padding-bottom: 150px;
+}
+
 .learning-phrase {
-    padding-top: 100px;
+    padding-bottom: 50px;
     text-align: center;
     color: $white;
     flex-direction: column;
@@ -15,8 +19,15 @@
 .how-to-video-wrapper {
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
-    padding-bottom: 80px;
+    padding-bottom: 100px;
+    height: 80%;
+
+    iframe {
+        padding: 0px;
+        margin: 0px;
+        height: 100%;
+        width: 90%;
+    }
 }
 
 

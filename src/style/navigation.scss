@@ -1,10 +1,7 @@
-a {
-    transition: 0.5s ease-in-out;
-}
-
 .container {
     grid-column-start: 1;
     grid-column-end: 4;
+    padding-bottom: 100px;
 }
 
 .navbar-toggler-icon {
@@ -23,7 +20,6 @@ a {
         .dropdown-item.active {
             margin-right: 10px;
             color: $white !important;
-            transition: 0.5s ease-in-out;
             background-color: transparent;
             border: 0px;
 
@@ -45,16 +41,31 @@ a {
             margin-left: 20px;
             display: flex;
             width: 400px;
+            transition: 0.5s ease-in-out;
         }
     }
 
-    .dropdown .dropdown-menu {
+    .dropdown .dropdown-menu,
+    .dropdown.show,
+    .submenu,
+    a,
+    .dropdown-item.active,
+    .container,
+    .nav-bar,
+    .nav-container.container,
+    .navbar-toggler,
+    .navbar-toggler.collapsed,
+    #basic-navbar-nav,
+    .navbar-collapsing {
         -webkit-transition: all 0.3s;
         -moz-transition: all 0.3s;
         -ms-transition: all 0.3s;
         -o-transition: all 0.3s;
         transition: all 0.3s;
+    }
 
+
+    .dropdown .dropdown-menu {
         max-height: 0;
         display: block;
         overflow: hidden;
@@ -90,4 +101,3 @@ a {
 .yummylogo {
     padding-left: 30px;
 }
-

@@ -21,7 +21,7 @@ function buy() {
 
 
 return (
-    <Container>
+    <Container className="how-to-buy-wrapper">
       <Row>
         <Col> 
 

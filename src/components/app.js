@@ -31,7 +31,7 @@ function App() {
             <Navbar expand="lg" variant="dark">
               <Container className="nav-container">
                 <Navbar.Brand href="/"><img className="transparentlogo"src={Logo}></img></Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" children={<Hamburger color={"#F47E14"}toggled={isOpen} toggle={setOpen} />}/>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" children={<Hamburger color={"#FAFAFA"}toggled={isOpen} toggle={setOpen} />}/>
              
                 <Navbar.Collapse id="basic-navbar-nav">                  
                   <Nav className="me-auto left-nav">
