@@ -16,7 +16,7 @@ import YummyLogoTransparent from '../../static/assets/YummyLogoTransparent.svg';
 import BKFCLogo from '../../static/assets/partners/BareKnuckle.png';
 import CoinGecko from '../../static/assets/partners/CoinGecko.png';
 import BitmartLogo from '../../static/assets/partners/bitmart.png';
-import CoinBase from '../../static/assets/partners/Coinbase.png';
+import CoinBase from '../../static/assets/partners/coinbase.png';
 import CoinHunt from '../../static/assets/partners/coinhunt.png';
 import CoinMarket from '../../static/assets/partners/coinmarketcap.png';
 import BSCscan from '../../static/assets/partners/bscscan.png';
