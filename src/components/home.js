@@ -29,6 +29,7 @@ import Soku from '../../static/assets/partners/soku.png';
 import DreamField from '../../static/assets/partners/dreamfield_logo.png';
 import Minty from '../../static/assets/partners/minty.svg'
 import Slam from '../../static/assets/partners/slam.png'
+import PCS from '../../static/assets/partners/pancakeswap.png';
 
 import Roadmap from '../../static/assets/roadmap.png'
 import WaveDivider from '../../static/assets/wave.svg';
@@ -121,6 +122,9 @@ return (
             </a>
             <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://mintyswap.com/">
               <img src={Minty}></img>
+            </a>
+            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://pancakeswap.finance/swap">
+              <img src={PCS}></img>
             </a>
             <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://www.dreamfield.co/">
               <img src={DreamField}></img>

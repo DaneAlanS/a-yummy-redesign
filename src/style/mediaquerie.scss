@@ -244,6 +244,51 @@
         }
     }
 
+    .glass-video-wrapper {
+        background: none;
+        box-shadow: none;
+        margin-bottom: 50px;
+    }
+
+    .truststep {
+        width: 50%;
+    }
+
+    .wallet-button {
+        width: 90%;
+    }
+
+    .tab-pane.active {
+        color: $white;
+        display: grid !important;
+        grid-template-columns: 1fr 3fr;
+        place-items: center;
+        gap: 20px;
+    }
+
+    .instructions.meta {
+        span {
+            font-size: 15px
+        }
+    }
+
+    .nav-item.nav-link {
+        margin-left: 5px;
+        padding: 5px;
+    }
+
+    .instructions {
+        padding: 25px;
+
+        h3 {
+            font-size: 16px;
+            color: $white;
+        }
+
+        p {
+            font-size: 14px;
+        }
+    }
 
 
 }
@@ -287,10 +332,68 @@
             justify-content: center;
         }
     }
+}
 
+@media screen and (max-width: 580px) {
+
+    .row {
+        margin: 0px;
+    }
+
+    .tab-content {
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .wallet-button {
+        font-size: 15px;
+    }
+
+    .tab-pane.active {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .instructions.meta {
+        span {
+            font-size: 15px
+        }
+    }
+
+    .nav-item.nav-link {
+        margin-left: 5px;
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    .app.container-fluid {
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+
+    .instructions {
+        padding: 10px;
+
+        h3 {
+            font-size: 16px;
+            color: $white;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        span {
+            font-size: 14px;
+        }
+    }
 
 
 }
+
+
+
 
 @media screen and (max-width: 480px) {
 
@@ -342,6 +445,30 @@
         width: 100vw;
         font-size: 10px;
     }
+
+    .instructions {
+        padding: 15px;
+
+        h3 {
+            font-size: 14px;
+            color: $white;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+
+    }
+
+    .glass-video-wrapper {
+        background: none;
+        box-shadow: none;
+        backdrop-filter: unset;
+        -webkit-backdrop-filter: unset;
+        border-radius: 0px;
+    }
+
 }
 
 
