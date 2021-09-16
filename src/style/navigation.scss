@@ -13,12 +13,10 @@
 
     .left-nav {
         font-size: 1.2em;
-        padding-right: 300px;
 
         a,
         .dropdown-menu,
         .dropdown-item.active {
-            margin-right: 10px;
             color: $white !important;
             background-color: transparent;
             border: 0px;

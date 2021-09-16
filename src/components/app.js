@@ -10,15 +10,14 @@ import Hamburger from 'hamburger-react';
 import {Navbar, Container, Nav, NavDropdown, Row, Col} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./home.js";
-import Buy from "./buy.js";
+import Learn from "./learn.js";
 import WhitePaper from"./whitepaper.js";
 
 import Logo from '../../static/assets/YummyCryptoTransparent.png';
-import PCS from '../../static/assets/pancakeswap.png';
-import Soku from '../../static/assets/soku.png';
-import Bitmart from '../../static/assets/bitmart.png';
-import BKFCLogo from '../../static/assets/BareKnuckle.png';
-import UNICEFLogo from '../../static/assets/UNICEF.png';
+import PCS from '../../static/assets/partners/pancakeswap.png';
+import Soku from '../../static/assets/partners/soku.png';
+import Bitmart from '../../static/assets/partners/bitmart.png';
+
 
 function App() {
   const [isOpen, setOpen] = useState(false)
@@ -77,7 +76,7 @@ function App() {
 
             <Switch>
               <Route exact path="/" component={Home}/>
-              <Route exact path="/learn" component={Buy}/>
+              <Route exact path="/learn" component={Learn}/>
               <Route exact path="/whitepaper" component={WhitePaper}/>
             </Switch>
 
