@@ -53,7 +53,7 @@ function App() {
                         </Col>
                       </Row>
                     </NavDropdown>
-                    <Nav.Link href="/">Merchandise</Nav.Link>
+                    <Nav.Link href="https://yummycryptomerch.com/" target="_blank" rel="noreferrer noopener">Merchandise</Nav.Link>
                   </Nav>
 
                 </Navbar.Collapse>
