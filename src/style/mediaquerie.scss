@@ -290,6 +290,11 @@
         }
     }
 
+    .carousel-caption {
+        font-size: 7px;
+        left: 5px;
+        bottom: -18px;
+    }
 
 }
 
@@ -335,9 +340,8 @@
 }
 
 @media screen and (max-width: 580px) {
-
-    .row {
-        margin: 0px;
+    .landing-wrapper.row {
+        width: 100%;
     }
 
     .tab-content {
@@ -387,6 +391,22 @@
         span {
             font-size: 14px;
         }
+
+        #textwrap {
+            margin-bottom: 100px !important;
+        }
+    }
+
+    .navbar-toggler.collapsed,
+    .navbar-toggler {
+        width: 55px !important;
+        height: 55px !important;
+    }
+
+    .video-wrapper {
+        iframe {
+            width: 100%;
+        }
     }
 
 
@@ -430,6 +450,10 @@
 
     .roadmap-wrapper {
         margin: auto;
+    }
+
+    .carousel-caption {
+        font-size: 6px;
     }
 
 

@@ -171,11 +171,6 @@ return (
             
           </div>
         </Row>
-
-          <Row className="roadmap-wrapper">
-            <h1>ROADMAP</h1>
-            <img className="roadmap"src={Roadmap}></img>
-          </Row>
         </Row>
       
 </Container>

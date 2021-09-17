@@ -1,9 +1,11 @@
-.full-socials {
+.app-wrapper>.app.container-fluid>.full-socials.row {
     background-color: $darkblue;
     border-top: $orange solid 1px;
     color: $white;
     justify-content: center;
     text-align: center;
+    margin-left: -12px !important;
+    margin-right: -12px !important;
 }
 
 .follow-socials {

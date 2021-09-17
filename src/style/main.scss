@@ -1,3 +1,7 @@
+.row {
+    margin: 0px !important;
+}
+
 body::-webkit-scrollbar {
     width: 1em;
 }
@@ -40,5 +44,6 @@ a:link {
 @import "./navigation.scss";
 @import "./footer.scss";
 @import "./home.scss";
-@import"./learn.scss";
+@import "./learn.scss";
+@import "./whitepaper.scss";
 @import "./mediaquerie.scss";
