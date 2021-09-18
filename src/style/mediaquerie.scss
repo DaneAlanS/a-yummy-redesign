@@ -57,7 +57,7 @@
     }
 
     .video-wrapper {
-        width: 80vw;
+        width: 80%;
     }
 
     .darkBG-text {
@@ -203,8 +203,7 @@
 
 
     .contract {
-        width: 100%;
-        font-size: 0.8em;
+        font-size: 0.7em;
     }
 
     .yummylogo {
@@ -306,13 +305,14 @@
     }
 
     .video-wrapper {
-        width: 100vw;
+        width: 100%;
         background: none;
         padding: 0px;
         border-radius: 0px;
 
         iframe {
             border-radius: 0px;
+            width: 135% !important;
         }
     }
 }
@@ -336,6 +336,12 @@
         .socials-footer {
             justify-content: center;
         }
+    }
+
+    .contract {
+        padding: 0px !important;
+        padding-top: 8px;
+        padding-bottom: 8px;
     }
 }
 
@@ -404,11 +410,8 @@
     }
 
     .video-wrapper {
-        iframe {
-            width: 100%;
-        }
+        width: 100% !important;
     }
-
 
 }
 

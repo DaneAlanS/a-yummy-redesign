@@ -36,7 +36,7 @@ import WaveDivider from '../../static/assets/wave.svg';
 import Sprout from '../../static/assets/sprout.png';
 import BlueBG from '../../static/assets/BG-1.png';
 
-
+ 
 function home() {
 
   useEffect(()=>{
@@ -49,7 +49,7 @@ return (
        <Row className="animate__animated animate__fadeIn  landing-wrapper">
         <Col  className="landing-paragraph-wrapper">
             <Row className="landing-text-container">
-              <Row className="landing-phrase"><p>Together We're<span>Changing Lives</span>Across the Globe.</p></Row>   
+              <Row className="landing-phrase"><p>Together We're<span>Changing Lives</span>Across The Globe.</p></Row>   
               <Row className="landing-details"><p>Yummy Crypto is a project launched on May 1st with a clear vision to deliver value to holders while providing contributions to help solve some of the world's most pressing issues.</p></Row>
               <Row className="button-wrapper">
                 <Button className="join-our-cause" href="/learn">Learn How To Buy Yummy    <i class="fas fa-long-arrow-alt-right"></i> </Button>
@@ -96,7 +96,7 @@ return (
           </Col>
         </Row>               
       </Row>
-      <Row>
+      <Row className="wave-wrapper">
         <img className="wave-divider"src={WaveDivider}></img>
       </Row>
 
