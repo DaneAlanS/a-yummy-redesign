@@ -31,16 +31,17 @@ import Minty from '../../static/assets/partners/minty.svg'
 import Slam from '../../static/assets/partners/slam.png'
 import PCS from '../../static/assets/partners/pancakeswap.png';
 
-import Roadmap from '../../static/assets/roadmap.png'
 import WaveDivider from '../../static/assets/wave.svg';
 import Sprout from '../../static/assets/sprout.png';
-import BlueBG from '../../static/assets/BG-1.png';
+
 
  
 function home() {
 
   useEffect(()=>{
-    Aos.init({});
+    Aos.init({
+      once:true
+    });
   },[])
 
 
@@ -60,8 +61,8 @@ return (
             <div className="video-wrapper">
                 <iframe width="700" height="363" src="https://www.youtube.com/embed/oFu2nYNiIm8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen={false}></iframe>
             </div>
-            <span className="contract" style={{ backgroundImage: `url(${BlueBG})` }}>CONTRACT ADDRESS: 0x05f2df7b3d612a23fe12162a6c996447dce728a5 <i className="far fa-clipboard"></i></span>
-            <Button className="join-our-cause" href="https://www.yummyupgrade.com/" target="_blank" rel="noreferrer noopener">V2 is Here! Migrate Now!</Button>
+            <span className="contract">CONTRACT ADDRESS: 0x9ab5c3fecc2fc4362e886d9dfd436b0147abedb3 <i className="far fa-clipboard"></i></span>
+            <Button className="join-our-cause V2" href="https://www.yummyupgrade.com/" target="_blank" rel="noreferrer noopener">V2 is Here! Migrate Now!</Button>
         </Col>
       </Row> 
 
@@ -75,8 +76,8 @@ return (
           </Col>
           <Col className="divider-message-wrapper">
             <Row className="divider-message">
-              <p>Within our short history, we've already <strong>donated over $1.1M</strong>, and <strong>35% of the total token supply has been burned</strong> as a method to return value to our holders. And that's just the start of it! </p>
-              <p>We recently introduced our <strong>Growth Fund</strong> to further maximize Yummy holders' returns through <strong>daily buybacks and burns.</strong> In addition, we have secured partnerships with prominent industry players such as <a href="https://www.bareknuckle.tv/"  target="_blank" rel="noreferrer noopener">Bare Knuckle FC</a> to further advance our social exposure within the crypto space and have much more in the works!</p>
+              <p>Within our short history, we've already <strong>donated over $1.1M, and</strong> <strong>35% of the total token supply has been burned</strong> as a method to return value to our holders. And that's just the start of it! </p>
+              <p>We recently introduced our <strong className="text-emphasis">Growth Fund</strong> to further maximize Yummy holders' returns through <strong>daily buybacks and burns.</strong> In addition, we have secured partnerships with prominent industry players such as <a href="https://www.bareknuckle.tv/"  target="_blank" rel="noreferrer noopener">Bare Knuckle FC</a> to further advance our social exposure within the crypto space and have much more in the works!</p>
               </Row>
           </Col>
         </Row>
@@ -90,7 +91,7 @@ return (
             <h3>MEALS SERVED</h3>
             <p>Every meal served represents a real person with a full stomach because of you.</p>
           </Col>
-          <Col className="numbers"><strong>75,000</strong>
+          <Col className="numbers"><strong>75,000+</strong>
             <h3>HOLDERS</h3>
             <p>75,000 holders who have decided to join us in our mission to make the World a better place.</p>
           </Col>
@@ -103,7 +104,7 @@ return (
       <Row className="darkBG" >
         <Row className="text-sprout-wrapper">
           <Col className="darkBG-text">
-            <p>Our leadership team is as thoroughly passionate about the long term growth of Yummy. We work hard to have a positive impact in the World, while maximizing the returns to our token Holders through our exceptional tokenomics.</p>
+            <p>Our leadership team is as thoroughly passionate about the long term growth of Yummy. We work hard to have a positive impact in the World, while <strong className="text-emphasis">maximizing the returns to our Token Holders</strong> through exceptional tokenomics.</p>
             <p>We are placing an emphasis on complete transparency, sustainable strategic growth decisions and innovative marketing campaigns that will ensure Yummy will reach its maximum potential.</p>
             <p>In addition to daily updates throughout our social channels, our leadership is very frequently available on the Yummy Coin Telegram for you to ask questions, give feedback or provide ideas. All are welcome to our Telegram/Discord channels, even non-Yummy holders.</p>
           </Col>
@@ -114,55 +115,55 @@ return (
         <Row className="partner-grid-wrapper">
           <span>Check Out Our Partners!</span>
           <div className="partner-grid">
-            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://www.bareknuckle.tv/">
+            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://www.bareknuckle.tv/" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="1000">
               <img src={BKFCLogo}></img>
             </a>
-            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://www.sokuswap.org/">
+            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://www.sokuswap.org/" data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000">
               <img src={Soku}></img>
             </a>
-            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://mintyswap.com/">
+            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://mintyswap.com/" data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000">
               <img src={Minty}></img>
             </a>
-            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://pancakeswap.finance/swap">
+            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://pancakeswap.finance/swap" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
               <img src={PCS}></img>
             </a>
-            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://www.dreamfield.co/">
+            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://www.dreamfield.co/" data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000"> 
               <img src={DreamField}></img>
             </a>
-            <a className="logo-container square" target="_blank" rel="noreferrer noopener" href="https://slamtoken.com/">
+            <a className="logo-container square" target="_blank" rel="noreferrer noopener" href="https://slamtoken.com/" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
               <img src={Slam}></img>
             </a>            
-            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://www.bitmart.com/en">
+            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://www.bitmart.com/en" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
               <img src={BitmartLogo}></img>
             </a>
-            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://www.binance.charity/">
+            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://www.binance.charity/" data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000">
               <img src={Bcharity}></img>
             </a>
-            <a className="logo-container square" target="_blank" rel="noreferrer noopener" href="https://marinadalglishappeal.org/">
+            <a className="logo-container square" target="_blank" rel="noreferrer noopener" href="https://marinadalglishappeal.org/" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
               <img src={MDAppeal}></img>
             </a>
-            <a className="logo-container square" target="_blank" rel="noreferrer noopener" href="https://oursorai.com/">
+            <a className="logo-container square" target="_blank" rel="noreferrer noopener" href="https://oursorai.com/" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
               <img src={Sorai}></img>
             </a>
-            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://21foundation.com/">
+            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://21foundation.com/" data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000">
               <img src={Foundation}></img>
             </a>            
-            <a className="logo-container square" target="_blank" rel="noreferrer noopener" href="https://spacegang.club/">
+            <a className="logo-container square" target="_blank" rel="noreferrer noopener" href="https://spacegang.club/" data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000">
               <img src={SpaceGang}></img>
             </a>
-            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://www.coinbase.com/">
+            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://www.coinbase.com/" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
               <img src={CoinBase}></img>
             </a>
-            <a className="logo-container square" target="_blank" rel="noreferrer noopener" href="https://coinhunt.cc/">
+            <a className="logo-container square" target="_blank" rel="noreferrer noopener" href="https://coinhunt.cc/" data-aos="fade-down" data-aos-delay="400" data-aos-duration="1000">
               <img src={CoinHunt}></img>
             </a>
-            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://coinmarketcap.com/">
+            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://coinmarketcap.com/" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
               <img src={CoinMarket}></img>
             </a>
-            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://www.coingecko.com/en">
+            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://www.coingecko.com/en" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
               <img src={CoinGecko}></img>
             </a>
-            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://bscscan.com/">
+            <a className="logo-container" target="_blank" rel="noreferrer noopener" href="https://bscscan.com/" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
               <img src={BSCscan}></img>
             </a>
             

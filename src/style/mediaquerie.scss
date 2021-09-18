@@ -192,18 +192,12 @@
 
 @media screen and (max-width: 800px) {
 
-
     .right-nav {
         display: none;
     }
 
     .landing-details {
         padding-bottom: 30px;
-    }
-
-
-    .contract {
-        font-size: 0.7em;
     }
 
     .yummylogo {
@@ -305,14 +299,14 @@
     }
 
     .video-wrapper {
-        width: 100%;
+        width: 100vw;
         background: none;
         padding: 0px;
         border-radius: 0px;
 
         iframe {
             border-radius: 0px;
-            width: 135% !important;
+            width: 100vw !important;
         }
     }
 }
@@ -337,17 +331,16 @@
             justify-content: center;
         }
     }
-
-    .contract {
-        padding: 0px !important;
-        padding-top: 8px;
-        padding-bottom: 8px;
-    }
 }
 
 @media screen and (max-width: 580px) {
-    .landing-wrapper.row {
-        width: 100%;
+    .contract {
+        width: 100vw;
+    }
+
+    .landing-wrapper {
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .tab-content {
@@ -377,10 +370,6 @@
         font-size: 15px;
     }
 
-    .app.container-fluid {
-        margin: 0px !important;
-        padding: 0px !important;
-    }
 
     .instructions {
         padding: 10px;
@@ -427,6 +416,7 @@
     .landing-details {
         padding-top: 20px;
         font-size: 15px;
+        width: 100vw;
     }
 
     .join-our-cause.btn {
@@ -435,6 +425,19 @@
 
     .video-contract-wrapper {
         padding-bottom: 50px;
+    }
+
+    .first-message {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .divider-message-wrapper {
+        padding: 0px;
+    }
+
+    .numbers-wrapper {
+        padding: 0px;
     }
 
     .numbers {
@@ -450,9 +453,9 @@
     }
 
 
-
-    .roadmap-wrapper {
-        margin: auto;
+    .text-sprout-wrapper {
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .carousel-caption {
@@ -463,14 +466,13 @@
 }
 
 @media screen and (max-width: 380px) {
+    .contract {
+        font-size: 10px;
+    }
+
     .landing-phrase {
         font-size: 30px;
         width: 100vw;
-    }
-
-    .contract {
-        width: 100vw;
-        font-size: 10px;
     }
 
     .instructions {

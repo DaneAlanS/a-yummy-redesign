@@ -17,6 +17,7 @@ import Logo from '../../static/assets/YummyCryptoTransparent.png';
 import PCS from '../../static/assets/partners/pancakeswap.png';
 import Soku from '../../static/assets/partners/soku.png';
 import Bitmart from '../../static/assets/partners/bitmart.png';
+import BlueBG from '../../static/assets/BG-1.png';
 
 
 function App() {
@@ -82,11 +83,11 @@ function App() {
 
 
           {/* FOOTER */}
-           <Row className="full-socials">
+           <Row className="full-socials" style={{ backgroundImage: `url(${BlueBG})` }}>
             <Row className="follow-socials">                      
               <Row className="copyright-social-wrapper">
                 <Col className="copyright">
-                  <span>© 2021 YUMMY CHARITY. All rights reserved</span>
+                  <span>© 2021 YUMMY PROJECT.&nbsp;&nbsp;All rights reserved</span>
                 </Col>
                 <Col className="socials-footer">
                   <a href="https://twitter.com/YummyCrypto" target="_blank" rel="noreferrer noopener"><i class="fab fa-twitter-square"></i></a>

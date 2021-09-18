@@ -2,6 +2,11 @@
     margin: 0px !important;
 }
 
+.app.container-fluid {
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
 body::-webkit-scrollbar {
     width: 1em;
 }
@@ -47,3 +52,8 @@ a:link {
 @import "./learn.scss";
 @import "./whitepaper.scss";
 @import "./mediaquerie.scss";
+
+.text-emphasis {
+    color: #550015;
+    font-weight: bold;
+}
